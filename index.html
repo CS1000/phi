@@ -34,7 +34,7 @@
     }
 
     function out(txt, append) {
-        if (!append) content.innerHTML = '';
+        if (!append) document.getElementById('content').innerHTML = '';
         document.getElementById('content').innerHTML += txt;
     }
 
