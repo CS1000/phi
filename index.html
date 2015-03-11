@@ -73,6 +73,7 @@
         return r;
     }
 
+    // ?? use?
     function makeColor(x) {
         var r=Math.min(~~(x/1) + 16, 255),
             g=Math.min(~~(x/1), 128);
@@ -108,7 +109,7 @@
         var perf=Date.now();
         newphi = bcdiv(n1, n0, phi.length);
         perf=Date.now()-perf;
-        content.style.color = makeColor(perf); //warnify
+
         if (perf > levels) {
             alerting(perf, ith);
             levels*=phi; //because PHI
